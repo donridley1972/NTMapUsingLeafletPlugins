@@ -1,0 +1,132 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{09834E53-0D90-43D2-A6E1-C335E40FD065}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>web76</RootNamespace>
+    <AssemblyName>web76</AssemblyName>
+    <OutputName>web76</OutputName>
+    <CWOutputType>Exe</CWOutputType>
+    <DefineConstants>NetShowSend=&gt;1%3b_ODDJOB_=&gt;0%3b_NT10_=&gt;1%3b_NT11_=&gt;1%3b_NT12_=&gt;1%3b_NT_=&gt;1%3bNETTALKLOG=&gt;0%3bStringTheoryLinkMode=&gt;1%3bStringTheoryDllMode=&gt;0%3bMD5=&gt;0%3bxFilesLinkMode=&gt;1%3bxFilesDllMode=&gt;0%3b_XFILES_=&gt;1%3b_XFILES4_=&gt;1%3bjFilesLinkMode=&gt;1%3bjFilesDllMode=&gt;0%3b_JFILES_=&gt;1%3bReflectionLM=&gt;1%3bReflectionDM=&gt;0%3b_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1%3b_NetTalkDllMode_=&gt;0%3b_NetTalkLinkMode_=&gt;1</DefineConstants>
+    <stack_size>16384</stack_size>
+    <CopyCore>True</CopyCore>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+    <GenerateMap>True</GenerateMap>
+    <line_numbers>True</line_numbers>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+    <GenerateMap>True</GenerateMap>
+    <line_numbers>False</line_numbers>
+  </PropertyGroup>
+  <ItemGroup>
+    <FileDriver Include="DOS" />
+    <FileDriver Include="TOPSPEED" />
+    <Compile Include="web76.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76001.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76002.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76003.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76004.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76005.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76006.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76007.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76008.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76009.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76010.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76011.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76012.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76013.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76014.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76015.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76016.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76017.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="WEB76_BC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76_BC0.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="web76_nw.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Library Include="clanet.lib" />
+    <None Include="caroot.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="dh2048.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="libcrypto-1_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="libssl-1_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="OpenSSL.Exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+    <None Include="zlibwapi.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Generated>True</Generated>
+      <ProjectGenerated>True</ProjectGenerated>
+    </None>
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>
